@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">codingchallenge</string>
+    <string name="get">Get</string>
+    <string name="post">Post</string>
 </resources>
