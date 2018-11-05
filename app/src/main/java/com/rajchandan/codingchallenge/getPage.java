@@ -24,7 +24,6 @@ public class getPage extends AppCompatActivity
     private ListView listView;
     private ListViewAdapter listViewAdapter;
     private List<serverInfo> serverInfoList = new ArrayList<>();
-    ArrayList<HashMap<String,String>> serverhash = new ArrayList<HashMap<String,String>>();
     private String TAG = getPage.class.getSimpleName();
 
 
@@ -73,7 +72,7 @@ public class getPage extends AppCompatActivity
                     String apiLastName = inside.getString("last_name");
                     String apiAvatar = inside.getString("avatar");
 
-                    serverInfoList.add(new serverInfo("First Name: " + apiFirstName, "last Name: " + apiLastName, apiAvatar));
+                    serverInfoList.add(new serverInfo("First Name: " + apiFirstName, "Last Name: " + apiLastName, apiAvatar));
                 }
 
             }catch (final JSONException e) {
